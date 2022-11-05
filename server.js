@@ -6,6 +6,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 //initializing app and creating port
 //the variable we use to create endpoints (app) is set to express(), which means that if we were to move the app routes from server.js to another file, we'd need to make sure we're using the same app the entire time. 
 const app = express();
+//When Heroku runs our app, it sets an environment variable called process.env.PORT. We're going to tell our app to use that port, if it has been set, and if not, default to port 3001.
 const PORT = process.env.PORT || 3001;
 
 // setting up body parsing/static/route middleware
