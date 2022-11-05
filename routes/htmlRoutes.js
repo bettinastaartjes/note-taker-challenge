@@ -1,3 +1,4 @@
+//export each routing call using router, not app and need to use path
 const path = require('path');
 const router = require('express').Router();
 

@@ -1,3 +1,4 @@
+///router allows you to declare any routes in any file as long as you use the proper middlewear
 const router = require('express').Router();
 const store = require('../db/store');
 
@@ -26,4 +27,5 @@ router.delete('/notes/:id', (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
+//export the router at the end of the file
 module.exports = router;
