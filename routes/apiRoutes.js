@@ -1,6 +1,6 @@
 ///router allows you to declare any routes in any file as long as you use the proper middlewear
 const router = require('express').Router();
-const store = require('../db/store');
+const store = require('../Main/db/store');
 
 // GET "/api/notes" responds with all notes from the database
 router.get('/notes', (req, res) => {
