@@ -18,6 +18,6 @@ app.use('api', apiRoutes);
 app.use('/', htmlRoutes);
 
 // starting server on port
-app.listen(3001, () => {
-    console.log(`listening on Port: ${PORT}`);
-});
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
+  });
